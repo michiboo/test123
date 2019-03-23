@@ -17,6 +17,6 @@ class docker_Test(unittest.TestCase):
         assert self.host.check_output('pgrep rsyslogd')  
 
     def test_ssh_running(self):
-        assert self.host.check_output('pgrep ssh')  
+        assert self.host.check_output('pgrep sshd')  
 if __name__ == "__main__":
     unittest.main()
