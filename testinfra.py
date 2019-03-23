@@ -14,9 +14,9 @@ class docker_Test(unittest.TestCase):
         assert self.host.check_output('puppet master --version') == "5.5.10"
 
     def test_rsyslog_running(self):
-        assert self.host.check_output('pgrep rsyslogd')  
+        assert self.host.check_output('pgrep -x rsyslogd')  
 
     def test_ssh_running(self):
-        assert self.host.check_output('pgrep sshd')  
+        assert self.host.check_output('pgrep -x sshd')  
 if __name__ == "__main__":
     unittest.main()
