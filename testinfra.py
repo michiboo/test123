@@ -4,7 +4,7 @@ import testinfra
 class docker_Test(unittest.TestCase):
     
     def setUp(self):
-        self.host = testinfra.get_host("docker://micky@[id]")
+        self.host = testinfra.get_host("docker://[user]@[id]") #id for basic_config_master container
 
     def test_puppet_is_installed(host):
         puppet = host.package("puppet")
