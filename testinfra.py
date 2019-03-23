@@ -4,7 +4,7 @@ import testinfra
 class docker_Test(unittest.TestCase):
     
     def setUp(self):
-        self.host = testinfra.get_host("docker://[user]@[id]") #id for basic_config_master container
+        self.host = testinfra.get_host("docker://root@[id]") #id for basic_config_master container
 
     def test_puppet_is_installed(self):
         assert self.host.check_output('puppet -v') == "5.5.10"
