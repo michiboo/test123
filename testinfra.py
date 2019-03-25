@@ -1,5 +1,5 @@
 # for some reason path variable is not same container if connect from testinfra
-
+# need to run as sudo
 path = 'export PATH="/usr/sue/sbin:/usr/sue/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/puppetlabs/bin" && '
 
 import unittest
