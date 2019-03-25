@@ -1,4 +1,4 @@
-# for some reason path variable is not same container if connect from testinfra
+# for some reason path variable is not same container if connect from testinfra and it has to renew path variable everytime
 # need to run as sudo
 path = 'export PATH="/usr/sue/sbin:/usr/sue/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/puppetlabs/bin" && '
 
